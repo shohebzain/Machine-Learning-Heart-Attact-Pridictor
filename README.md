@@ -1,141 +1,282 @@
-# Heart Attack Risk Prediction Website
+# ❤️ Heart Attack Risk Prediction System
 
-A web-based application that uses machine learning to predict the risk of heart attack based on patient medical data.
+<p align="center">
 
-## Features
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_Framework-black?logo=flask)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?logo=numpy)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- 🤖 **Machine Learning Model**: Support Vector Machine (SVM) algorithm for accurate predictions
-- 🎨 **Beautiful UI**: Modern, responsive design with gradient backgrounds
-- 📊 **Risk Assessment**: Provides percentage-based risk scores
-- 💻 **User-Friendly**: Intuitive form with medical field inputs
-- 📱 **Responsive Design**: Works on desktop, tablet, and mobile devices
+</p>
 
-## Project Structure
+A web-based **Heart Attack Risk Prediction System** that leverages **Machine Learning** to estimate the probability of heart disease based on patient medical information. The application uses a trained **Support Vector Machine (SVM)** model and provides a simple, responsive interface for healthcare demonstrations, research, and educational purposes.
 
-```
-heart attack prediction/
-├── app.py                 # Flask backend application
-├── requirements.txt       # Python dependencies
-├── SVM_heart.pkt         # Trained SVM model
-├── columns.pkl           # Feature column names
-├── scaler.pkl            # Data scaler for normalization
-├── df_encode.pkl         # Encoder for categorical variables
-├── templates/
-│   └── index.html        # Main HTML template
-└── static/
-    ├── style.css         # Styling
-    └── script.js         # Frontend logic
-```
-
-## Installation
-
-### Prerequisites
-- Python 3.7 or higher
-- pip (Python package manager)
-
-### Setup Steps
-
-1. **Navigate to the project directory:**
-   ```bash
-   cd "d:\heart attact prediction"
-   ```
-
-2. **Create a virtual environment (optional but recommended):**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Running the Application
-
-1. **Start the Flask server:**
-   ```bash
-   python app.py
-   ```
-
-2. **Open your browser and go to:**
-   ```
-   http://localhost:5000
-   ```
-
-3. **Enter patient information** and click "Predict Risk" to get the assessment
-
-## Input Fields
-
-- **Age**: Patient's age in years
-- **Sex**: Male or Female
-- **Chest Pain Type**: Type of chest pain experienced
-- **Resting Blood Pressure**: In mmHg
-- **Cholesterol**: In mg/dl
-- **Fasting Blood Sugar**: Whether blood sugar > 120 mg/dl
-- **Resting ECG Results**: ECG findings
-- **Max Heart Rate Achieved**: During stress test
-- **Exercise Induced Angina**: Whether exercise causes chest pain
-- **ST Depression (oldpeak)**: ST segment depression
-- **ST Slope**: Slope of ST segment
-- **Coronary Artery Calcification**: Number of vessels affected
-- **Thalassemia Type**: Blood disorder type
-
-## Understanding Results
-
-- **✅ Low Risk**: Less than 50% probability of heart attack
-- **⚠️ High Risk**: 50% or greater probability of heart attack
-
-## Medical Disclaimer
-
-⚠️ **IMPORTANT**: This application is for educational and informational purposes only. It should NOT be used as a substitute for professional medical advice. Always consult with a qualified healthcare professional before making any medical decisions.
-
-## Model Information
-
-- **Algorithm**: Support Vector Machine (SVM)
-- **Training Data**: Historical cardiac patient data
-- **Performance**: Validated with comprehensive test datasets
-
-## Troubleshooting
-
-### Port Already in Use
-If port 5000 is already in use, modify the last line in `app.py`:
-```python
-if __name__ == '__main__':
-    app.run(debug=True, port=5001)  # Change to different port
-```
-
-### Missing Model Files
-Ensure all `.pkl` files are in the project root directory:
-- `SVM_heart.pkt`
-- `columns.pkl`
-- `scaler.pkl`
-- `df_encode.pkl`
-
-### Dependencies Issues
-Reinstall requirements:
-```bash
-pip install --upgrade -r requirements.txt
-```
-
-## Future Enhancements
-
-- [ ] User authentication and patient records
-- [ ] Historical data visualization
-- [ ] Export reports as PDF
-- [ ] Multi-language support
-- [ ] Integration with health monitoring devices
-- [ ] Database for storing predictions
-- [ ] Advanced analytics dashboard
-
-## License
-
-This project is provided as-is for educational purposes.
-
-## Support
-
-For issues or questions, please review the troubleshooting section or consult the code comments.
+> **⚠️ Disclaimer:** This application is intended for educational and research purposes only and should not replace professional medical advice or diagnosis.
 
 ---
 
-**Built with**: Flask, scikit-learn, NumPy, and modern web technologies
+# 📖 Overview
+
+The application accepts various clinical parameters, preprocesses the data using trained encoders and scalers, and predicts the likelihood of heart disease using a machine learning model. It demonstrates the integration of Machine Learning with a Flask-based web application.
+
+---
+
+# ✨ Features
+
+* ❤️ Heart attack risk prediction
+* 🤖 Machine Learning powered by Support Vector Machine (SVM)
+* 📊 Percentage-based risk assessment
+* 📋 Patient medical data input form
+* 📱 Fully responsive interface
+* ⚡ Fast Flask backend
+* 🔄 Automated data preprocessing
+* 🎨 Modern and user-friendly design
+
+---
+
+# 🛠️ Tech Stack
+
+| Category             | Technologies            |
+| -------------------- | ----------------------- |
+| Programming Language | Python                  |
+| Backend              | Flask                   |
+| Machine Learning     | Scikit-learn            |
+| Data Processing      | NumPy, Pandas           |
+| Frontend             | HTML5, CSS3, JavaScript |
+| Model Serialization  | Pickle (.pkl)           |
+
+---
+
+# 📂 Project Structure
+
+```text
+Heart-Attack-Risk-Prediction/
+│
+├── app.py                  # Flask application
+├── requirements.txt        # Dependencies
+├── SVM_heart.pkl           # Trained ML model
+├── scaler.pkl              # Feature scaler
+├── columns.pkl             # Feature columns
+├── df_encode.pkl           # Label encoder
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/heart-attack-risk-prediction.git
+```
+
+Navigate to the project
+
+```bash
+cd heart-attack-risk-prediction
+```
+
+---
+
+## Create a Virtual Environment (Optional)
+
+```bash
+python -m venv venv
+```
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run the Application
+
+```bash
+python app.py
+```
+
+Open your browser:
+
+```text
+http://localhost:5000
+```
+
+---
+
+# 🩺 Input Parameters
+
+The prediction model uses the following medical attributes:
+
+* Age
+* Gender
+* Chest Pain Type
+* Resting Blood Pressure
+* Cholesterol Level
+* Fasting Blood Sugar
+* Resting ECG Results
+* Maximum Heart Rate
+* Exercise-Induced Angina
+* ST Depression (Oldpeak)
+* ST Segment Slope
+* Number of Major Vessels
+* Thalassemia Type
+
+---
+
+# 📊 Prediction Output
+
+| Risk Level   | Description                 |
+| ------------ | --------------------------- |
+| ✅ Low Risk   | Probability below 50%       |
+| ⚠️ High Risk | Probability of 50% or above |
+
+The system displays:
+
+* Risk percentage
+* Prediction result
+* User-friendly interface
+* Easy-to-understand output
+
+---
+
+# 🧠 Machine Learning Pipeline
+
+```text
+Patient Data
+      │
+      ▼
+Data Preprocessing
+      │
+      ▼
+Encoding
+      │
+      ▼
+Feature Scaling
+      │
+      ▼
+SVM Prediction Model
+      │
+      ▼
+Risk Percentage
+      │
+      ▼
+Prediction Result
+```
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Machine Learning model deployment
+* Flask web development
+* Data preprocessing
+* Feature scaling
+* Model serialization
+* User interface development
+* Integration of AI with healthcare applications
+
+---
+
+# 🚀 Future Enhancements
+
+* 🗄️ Database integration
+* 👤 User authentication
+* 📈 Patient history dashboard
+* 📄 PDF medical reports
+* 📱 Mobile application
+* ☁️ Cloud deployment
+* 🤖 Deep Learning models
+* 📊 Explainable AI (XAI)
+* 🌐 Multi-language support
+* 🔔 Email and SMS notifications
+
+---
+
+# 📸 Screenshots
+
+Include screenshots of:
+
+* Home Page
+* Patient Form
+* Prediction Result
+* Mobile View
+
+---
+
+# ⚠️ Medical Disclaimer
+
+This project is intended **only for educational, research, and demonstration purposes**.
+
+The predictions generated by this application **must not be used for clinical diagnosis or medical treatment decisions**. Always consult a qualified healthcare professional for medical advice.
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push your branch
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 👨‍💻 Developer
+
+**Mohammad Shoheb**
+
+* AI & Full-Stack Developer
+* Python • Flask • Machine Learning • React
+* Passionate about AI, Healthcare Technology, and Software Development
+
+---
+
+## ⭐ Support
+
+If you found this project useful:
+
+⭐ Star this repository
+
+🍴 Fork it
+
+💡 Contribute improvements
+
+🚀 Happy Coding!
