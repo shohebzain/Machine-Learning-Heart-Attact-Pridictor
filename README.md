@@ -220,19 +220,6 @@ This project demonstrates:
 * 🌐 Multi-language support
 * 🔔 Email and SMS notifications
 
----
-
-# 📸 Screenshots
-
-Include screenshots of:
-
-* Home Page
-* Patient Form
-* Prediction Result
-* Mobile View
-
----
-
 # ⚠️ Medical Disclaimer
 
 This project is intended **only for educational, research, and demonstration purposes**.
