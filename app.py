@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import os
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 # Load the model and preprocessing files with error handling
 model = None
