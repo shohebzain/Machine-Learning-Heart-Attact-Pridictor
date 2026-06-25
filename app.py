@@ -13,7 +13,7 @@ encoder = None
 
 try:
     model_path = 'SVM_heart.pkt'
-    with open(model_path, 'rb') as f:
+    with open(model_path, 'rb') as f: 
         model = pickle.load(f)
     
     columns_path = 'columns.pkl'
