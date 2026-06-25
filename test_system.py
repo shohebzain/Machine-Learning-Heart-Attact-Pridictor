@@ -3,7 +3,7 @@ Heart Attack Prediction - System Test Script
 Tests all components and validates bug fixes
 """
 
-import sys
+import sys 
 import os
 
 def print_header(text):
