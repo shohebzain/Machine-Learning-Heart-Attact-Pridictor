@@ -11,7 +11,7 @@ DIST = os.path.join(SRC, 'dist')
 
 # Files/dirs to include in production build
 INCLUDE_FILES = [
-    'app.py',
+    'app.py', 
     'SVM_heart.pkt',
     'columns.pkl',
     'scaler.pkl',
