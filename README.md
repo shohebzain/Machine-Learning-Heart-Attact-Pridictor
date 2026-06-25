@@ -14,7 +14,7 @@ A web-based **Heart Attack Risk Prediction System** that leverages **Machine Lea
 
 > **⚠️ Disclaimer:** This application is intended for educational and research purposes only and should not replace professional medical advice or diagnosis.
 
----
+--- 
 
 # 📖 Overview
 
