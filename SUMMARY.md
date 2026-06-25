@@ -9,7 +9,7 @@ All software bugs in your Heart Attack Prediction website have been **successful
 ## 🐛 Bugs Fixed: 10 Total
 
 ### Backend Issues (6 bugs fixed)
-
+ 
 | # | Bug | Status | Impact |
 |---|-----|--------|--------|
 | 1 | No error handling for missing model files | ✅ FIXED | App would crash on startup |
