@@ -3,7 +3,7 @@ Heart Attack Prediction Model Training Script
 Generates SVM model and preprocessing files for the web application
 """ 
 
-import pickle
+import pickle 
 import numpy as np
 import pandas as pd
 from sklearn.svm import SVC
