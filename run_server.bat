@@ -5,7 +5,7 @@ REM This script activates the virtual environment and starts the Flask app
 echo ========================================
 echo Heart Attack Prediction Website
 echo ========================================
-echo.
+echo. 
 
 REM Activate virtual environment
 echo [*] Activating virtual environment...
