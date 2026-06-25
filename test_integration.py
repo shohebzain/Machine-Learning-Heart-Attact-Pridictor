@@ -4,7 +4,7 @@ Tests complete workflow: Form → Backend → Prediction → Response
 """
 
 import requests
-import json
+import json 
 import subprocess
 import time
 import signal
