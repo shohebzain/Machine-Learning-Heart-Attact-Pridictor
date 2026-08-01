@@ -9,7 +9,7 @@ echo.
 
 REM Activate virtual environment
 echo [*] Activating virtual environment...
-call venv\Scripts\activate.bat
+call venv\Scripts\activate.bat 
 
 if errorlevel 1 (
     echo [!] Error: Could not activate virtual environment
