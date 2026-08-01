@@ -6,7 +6,7 @@ import io, sys
 # Fix Windows console encoding for Unicode characters
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
-
+ 
 import pickle, numpy as np, pandas as pd, os, json, time
 from datetime import datetime
 from sklearn.svm import SVC
